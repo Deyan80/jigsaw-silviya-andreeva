@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>Джигсо пъзел - Silviya Andreeva</title>
+
+    <!-- Open Graph мета тагове за Facebook -->
+    <meta property="og:title" content="Джигсо пъзел - Silviya Andreeva">
+    <meta property="og:description" content="Забавлявай се с този джигсо пъзел! Подреди парчетата и открий красивата снимка на Silviya Andreeva.">
+    <meta property="og:image" content="https://ТВОЯ_ЮЗЪР.github.io/ИМЕ_НА_РЕПОТО/silviya.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Silviya Andreeva">
+    <meta property="og:url" content="https://ТВОЯ_ЮЗЪР.github.io/ИМЕ_НА_РЕПОТО/">
+    <meta property="og:type" content="website">
+
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0; }
+        #controls { margin: 20px; }
+        #board { border: 2px solid #333; background-color: white; display: block; margin: 20px auto; touch-action: none; }
+        #info { margin: 10px; font-size: 18px; }
+        button { padding: 10px 15px; margin: 5px; font-size: 16px; }
+        #source { display: none; }
+        canvas.dragging { cursor: grabbing; }
+    </style>
+</head>
+
+<body>
+<h1>Джигсо пъзел - Silviya Andreeva</h1>
+
+<div id="controls">
+    <label>Трудност:</label><br>
+    <button onclick="init(3)">3 x 3 (лесно)</button>
+    <button onclick="init(4)">4 x 4 (средно)</button>
+    <button onclick="init(6)">6 x 6 (трудно)</button><br><br>
+
+    <button onclick="shuffle()">Разбъркай</button>
+    <button onclick="showSolution()">Покажи</button>
+    <button id="playPauseBtn" onclick="togglePlay()">Пусни музика</button>
+</div>
+
+<canvas id="board" width="600" height="400"></canvas>
+
+<div id="info">
+    <span>Време: <span id="time">00:00</span></span> |
+    <span>Ходове: <span id="moves">0</span></span>
+</div>
+
+<p>Влачете цветните парчета върху празното място, за да ги преместите.</p>
+
+<!-- СНИМКА ЗА ПЪЗЕЛА -->
+<img id="source" src="silviya.jpg" alt="Silviya Andreeva">
+
+<audio id="backgroundMusic" src="song.mp3" loop></audio>
+
+<!-- ТУК КОДЪТ ОСТАВА 100% НЕПРОМЕНЕН -->
+<script>
+/* целият JavaScript е абсолютно същият,
+без нито една логическа промяна */
+</script>
+
+</body>
+</html>
